@@ -1,0 +1,12 @@
+int findSum(int A[], int N)
+    {
+    	//code here.
+    	int min = INT_MAX, max = INT_MIN;
+    	
+    	for(int idx = 0;idx < N;idx++){
+    	    if(min > A[idx]) min = A[idx];
+    	    if(max < A[idx]) max = A[idx];
+    	    
+    	}
+    	return min+max;
+    }
